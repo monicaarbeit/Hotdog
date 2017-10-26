@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1> Spicy </h1>
+<div class='col-md-4'>
+	<h1 id='welcome'>
+		Hello {% if name %} {{ name }} {% else %} Stranger {% endif %}
+	</h1>
+	<b>
+	You can find more info <a href=" {{ url_for('login') }}"> here</a>
+	</b>
+
+</div>
+{% endblock %}
